@@ -25,8 +25,10 @@ https://facebook.github.io/react-native/docs/getting-started.html#content
 | adb devices | Shows currently connected Andorid devices |
 | android sdk | Opens the Android SDK manager, useful when updating build tools |
 | gradlew clean | Cleans and rebuild your Android platform project |
+| gradlew compileDebug --stacktrace | Add stacktrace logging to gradle config |
 | react-native -start  | Starts the react-native dev server |
 | react-native run-android | Builds and deployes the app to listening Android device or emulator |
+
 
 
 ## Troubleshooting

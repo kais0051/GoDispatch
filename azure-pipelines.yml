@@ -2,6 +2,11 @@ pool:
   vmImage: 'macOS-10.13'
 
 steps:
+- script: |
+    npm install
+    npm run build
+  displayName: 'npm install and build'
+  
 - task: Gradle@2
   inputs:
     workingDirectory: '$(system.defaultWorkingDirectory)/android'

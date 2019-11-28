@@ -20,9 +20,8 @@ steps:
     npm run build
   displayName: 'npm install and build'
 
-  # Runs the `test` script that I included in my package.json
-- task: Npm@1
-  inputs:
-    command: custom
-    customCommand: 'test'
-  displayName: Run Tests
+- script: |
+    cd android
+    bundle install
+    fastlane build
+  displayName: 'Build android'
